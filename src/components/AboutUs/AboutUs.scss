@@ -1,0 +1,36 @@
+.about {
+  font-family: 'Rubik', sans-serif;
+  width: 69vw;
+  margin: 0 auto;
+  color: #3d3d3d;
+
+  &__us-title {
+    margin: 80px 0 60px;
+    letter-spacing: -0.68px;
+    font-size: 34px;
+    opacity: 0.9;
+  }
+
+  &__us-text {
+    opacity: 0.8;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 780px) {
+  .about {
+    &__us-title {
+      font-size: 25px;
+      margin: 60px 0 40px;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .about {
+    &__us-title {
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.form {
+  display: flex;
+  background-color: white;
+  width: 350px;
+  height: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 35%;
+  position: absolute;
+
+  &__day,
+  &__month {
+    margin-left: 12px;
+    margin-top: 12px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: #A2A2A2;
+    font-size: 14px;
+  }
+
+  &__day {
+    margin-right: 12px;
+  }
+
+  &__day-text,
+  &__month-text {
+    width: 100%;
+    height: 30px;
+    border: 1.5px solid #fdd000;
+    opacity: 0.8;
+    padding-left: 10px;
+    margin-top: 3px;
+    color: #3d3d3d;
+  }
+
+  &__exit {
+    width: 28px;
+    height: 28px;
+    color: #3d3d3d;
+    background-color: #fdd000;
+    cursor: pointer;
+  }
+}
+
+.form__wrapper {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.84);
+}
+

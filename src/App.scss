@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 60px;
+
+  &__img {
+    width: 200px;
+  }
+
+  &__logo {
+    width: 100%;
+  }
+  
+  .section {
+    &__content {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .header {
+    flex-direction: column;
+
+    .menu {
+      &__item {
+        font-size: 14px;
+      }
+    }
+  }
+}
