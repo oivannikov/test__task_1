@@ -5,7 +5,7 @@ import '../Form/Form.scss';
 
 const Form = ({ handleButtonClose, day, month }) => {
   return (
-    <div className="form">
+    <div className="form__wrapper">
       <div className="form__month">
         <label htmlFor="month">Month</label>
         <input

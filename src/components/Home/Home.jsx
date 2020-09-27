@@ -3,10 +3,15 @@ import React, { useState } from 'react';
 import '../Home/Home.scss';
 import '../Home/Calendar.scss';
 
-import { setMonthAction, setDayAction, setFormOpenAction } from '../../actions';
-import { connect } from 'react-redux';
 import Calendar from 'react-calendar';
 import classNames from 'classnames';
+import { connect } from 'react-redux';
+
+import {
+  setMonthAction,
+  setDayAction,
+  setFormOpenAction 
+} from '../../redux/actions';
 
 import Form from '../Form/Form';
 const Home = ({ dispatch, isFormOpen }) => {
@@ -61,7 +66,7 @@ const Home = ({ dispatch, isFormOpen }) => {
       </div>
       {
         isFormOpen &&
-        <div className="form__wrapper">
+        <div className="content__form form">
           <Form
             handleButtonClose={() => dispatch(setFormOpenAction(false))}
           />

@@ -5,6 +5,7 @@ const initialState = {
   day: '',
   isFormOpen: false,
 };
+
 const rootReducer = (state = {}, action) => {
   switch(action.type) {
     case 'SET_MONTH':
