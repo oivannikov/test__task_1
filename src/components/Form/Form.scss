@@ -51,4 +51,12 @@
   }
 }
 
+@media (max-width: 430px) {
+  .form {
+    &__wrapper {
+      width: 310px;
+    }
+  }
+}
+
 
